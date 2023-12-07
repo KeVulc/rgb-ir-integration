@@ -11,7 +11,7 @@ def get_rgb_results(imagepath, model):
     return result
 
 if __name__ == '__main__':
-    model = YOLO('yolov8x.pt')
+    model = YOLO('yolov8n.pt')
     result = model('video-BzZspxAweF8AnKhWK-frame-000745-SSCRtAHcFjphNPczJ.jpg')  # predict on an image
 
     names = result[0].names
